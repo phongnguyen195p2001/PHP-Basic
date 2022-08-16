@@ -11,4 +11,61 @@
 ### HTML5
 - **HTML** là viết tắt của Hyper Text Markup Language. Nó được sử dụng để thiết kế các trang web bằng ngôn ngữ đánh dấu. HTML là viết tắt của ngôn ngữ Siêu văn bản và Đánh dấu. Siêu văn bản xác định liên kết giữa các trang web. Ngôn ngữ đánh dấu được sử dụng để xác định tài liệu văn bản trong thẻ xác định cấu trúc của các trang web. HTML 5 là phiên bản thứ năm và hiện tại của HTML. Nó đã cải thiện đánh dấu có sẵn cho các tài liệu và đã giới thiệu các giao diện lập trình ứng dụng:application programming interfaces(API) và Mô hình Đối tượng Tài liệu:Document Object Model(DOM).
 ### CSS
-- **C**ascading **S**tyle **S**heets, fondly referred to as **CSS**, is a simply designed language intended to simplify the process of making web pages presentable. CSS allows you to apply styles to web pages. More importantly, CSS enables you to do this independent of the HTML that makes up each web page. It describes how a webpage should look: it prescribes colors, fonts, spacing, and much more. In short, you can make your website look however you want. CSS lets developers and designers define how it behaves, including how elements are positioned in the browser.
+- **C**ascading **S**tyle **S**heets, hay còn được gọi là **CSS**, CSS cho phép áp dụng cả kiểu(Style) cho các trang web ,bạn có thể làm cho trang web theo cách mình muốn như thay đổi màu phông chữ , khoảng cách và nhiều thứ khác.
+## PHP Introduction
+- Thuật ngữ PHP được viết tắt từ _Hypertext Preprocessor_ .PHP là một ngôn ngữ kịch bản(scripting languege) phía máy chủ đc thiết kế đặc biệt để phát triển web. PHP là một mã nguồn mở, được tải xuống và sử dingj miễn phí.
+## PHP Syntax
+- Một tập lệnh được thực thi trên máy chủ và dả về kết quả của HTML được ghi trở laiij trình duyệt, nó thường có các thẻ HTML và PHP.
+## PHP Data Types
+**Các biến có thể lưu trữ dữ liệu thuộc các kiểu khác nhau và các kiểu dữ liệu khác nhau có thể làm những việc khác nhau:**
+- **String** : Trả về chuỗi.
+`
+    $a = "chuỗi";
+`
+- **Integer(int)** : Trả về số nguyên.
+`
+    $a = 1;
+`
+- **Float** : Trả về dạng số thập phân.
+`
+    $a = 2.5;
+`
+- **Boolen** : Trả về đúng hoặc sai.
+`
+  $x = true;
+  $y = false;
+`
+- **Array** : Trả về mảng.
+`
+  $cars = array("Volvo","BMW","Toyota");
+`
+- **Object** : Trả về 1 đối tượng.
+```
+<?php
+    class Car {
+        public $color;
+        public $model;
+        public function __construct($color, $model) {
+            $this->color = $color;
+            $this->model = $model;
+        }
+        public function message() {
+            return "My car is a " . $this->color . " " . $this->model . "!";
+        }
+    }
+
+    $myCar = new Car("black", "Volvo");
+    echo $myCar -> message();
+    echo "<br>";
+    $myCar = new Car("red", "Toyota");
+    echo $myCar -> message();
+?>
+```
+- **Null** : Trả về null(Không có giá trị nào đc gán cho nó).
+`
+  $x = "Hello world!";
+  $x = null;
+`
+- **Resource** : Nó là việc lưu trữ một tham chiếu đến các hàm và tài nguyên bên ngoài PHP.
+## PHP Variables, Constants and Array  
+
