@@ -68,4 +68,11 @@
 `
 - **Resource** : Nó là việc lưu trữ một tham chiếu đến các hàm và tài nguyên bên ngoài PHP.
 ## PHP Variables, Constants and Array  
-
+### Variables
+- Các biến(Variables) trong chương trình được sử dụng để lưu trữ một số giá hoặc dữ liệu nào đó.Các biến có thể lưu chuỗi,giá trị kí tự,địa chỉ bộ nhớ và giá trị số.
+- Mọi biến được khai báo trong PHP phải bắt đầu bằng dấu đô la ($), theo sau là tên biến.
+### Constants
+- Hằng số(Constands) là số nhận dạng hoặc tên đơn giản có thể được gán bất kỳ giá trị cố định nào .Tương tự như một biến ngoại trừ việc chúng không bao giờ có thể thay đổi được kể cả trong quá trình thực thi.
+### Array
+- Mảng(Array) trong PHP là một kiểu cấu trúc dữ liệu cho phép ta lưu trữ nhiều phần tử của kiểu dữ liệu tương tự dưới một biến duy nhất.Một mảng được tạo bằng cách sử dụng một hàm `array()` trong PHP hoặc có thể dùng bằng cách khai báo biến `$a = ["a","b","c"]`.
+## PHP Operators
