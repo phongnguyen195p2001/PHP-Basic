@@ -76,3 +76,13 @@
 ### Array
 - Mảng(Array) trong PHP là một kiểu cấu trúc dữ liệu cho phép ta lưu trữ nhiều phần tử của kiểu dữ liệu tương tự dưới một biến duy nhất.Một mảng được tạo bằng cách sử dụng một hàm `array()` trong PHP hoặc có thể dùng bằng cách khai báo biến `$a = ["a","b","c"]`.
 ## PHP Operators
+- Các toán tử(Operators) được sử dụng để thực hiện các phép toán đơn giản như cộng ,trừ ,nhân ,...
+### Kí hiệu
+| Operator | Name        | Syntax      | Operation                           |
+|:---------|:------------|:------------|:------------------------------------|
+| +        | Cộng        | $x + $y     | Tính tổng phép tính                 |
+| -        | Trừ         | $x - $y     | Trừ phép tính                       |
+| *        | Nhân        | $x * $y     | Nhân phép tính                      |
+| /        | Chia        | $x / $y     | Chia phép tính                      |
+|**        | Lũy thừa    | $x ** $y    | $x được nâng lên thành lũy thừa $y  |
+|**        | Mô đun      | $x % $y     | Phần còn lại của $x chia cho $y     |
