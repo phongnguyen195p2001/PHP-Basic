@@ -86,3 +86,17 @@
 | /        | Chia        | $x / $y     | Chia phép tính                      |
 |**        | Lũy thừa    | $x ** $y    | $x được nâng lên thành lũy thừa $y  |
 |**        | Mô đun      | $x % $y     | Phần còn lại của $x chia cho $y     |
+## Control Structures
+### if else statement
+- Câu lệnh if / else thực thi một khối mã nếu một điều kiện được chỉ định là đúng. Nếu điều kiện sai, một khối mã khác có thể được thực thi.
+### else if statement  
+- Câu lệnh if ... elseif ... else thực thi các mã khác nhau cho nhiều hơn hai điều kiện.
+### switch case         
+### Loops
+### while
+### do while       
+### for
+### foreach
+## String Functions   
+## Array Functions
+## File handling
