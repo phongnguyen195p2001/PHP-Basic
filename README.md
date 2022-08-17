@@ -269,6 +269,254 @@ foreach ($colors as $value) {
 
 ## String Functions
 
+-Các hàm chuỗi PHP là một phần của lõi PHP. Không cần cài đặt để sử dụng các chức năng này.
+
+1. Hàm `chunk_split()` : Tách một chuỗi thành một loạt các phần nhỏ hơn.
+
+<details><summary><b>Demo</b></summary>
+<p>
+
+```php 
+<?php
+  $str = "Hello world!";
+  echo chunk_split($str,1,".");
+?>
+```
+
+Return : H.e.l.l.o. .w.o.r.l.d.!.
+
+</p>
+</details>
+
+2. Hàm `implode()` : Trả về một chuỗi từ các phần tử của một mảng.
+
+<details><summary><b>Demo</b></summary>
+   <p>
+
+```php 
+<?php
+$arr = array('Hello','World!','Beautiful','Day!');
+echo implode(" ",$arr);
+?>
+```
+
+Return: Hello World! Beautiful Day!
+
+</p>
+</details>
+
+3. Hàm `explode()` : Ngắt một chuỗi thành một mảng.
+
+<details><summary><b>Demo</b></summary>
+   <p>
+
+```php 
+<?php
+$str = "Hello world. It's a beautiful day.";
+print_r (explode(" ",$str));
+?> 
+```
+
+Return: Array ( [0] => Hello [1] => world. [2] => It's [3] => a [4] => beautiful [5] => day. )
+
+</p>
+</details>
+
+4. Hàm `echo()` : Đầu ra một hoặc nhiều chuỗi.
+
+<details><summary><b>Demo</b></summary>
+   <p>
+
+```php 
+<?php
+echo "Hello!"
+?> 
+```
+
+Return: Hello!
+
+</p>
+</details>
+
+5. Hàm `join()` : Giống mới hàm `implode()`
+
+<details><summary><b>Demo</b></summary>
+   <p>
+
+```php 
+<?php
+$arr = array('Hello','World!','Beautiful','Day!');
+echo join(" ",$arr);
+?> 
+```
+
+Return: Hello World! Beautiful Day!
+
+</p>
+</details>
+
+6. Hàm `md5()` : Hàm mã hóa MD5.
+
+<details><summary><b>Demo</b></summary>
+   <p>
+
+```php 
+<?php
+$str = "Hello";
+echo md5($str);
+?> 
+```
+
+Return: 8b1a9953c4611296a827abf8c47804d7
+
+</p>
+</details>
+
+7. Hàm `str_ireplace()` : Thay thế một số ký tự bằng một số ký tự khác trong một chuỗi.
+
+<details><summary><b>Demo</b></summary>
+   <p>
+
+```php 
+<?php
+echo str_ireplace("WORLD","Peter","Hello good world!");
+
+?> 
+```
+
+Return: Hello good Peter!
+
+</p>
+</details>
+
+8. Hàm `str_repeat()` : Lặp lại một chuỗi một số lần được chỉ định.
+
+<details><summary><b>Demo</b></summary>
+   <p>
+
+```php 
+<?php
+echo str_repeat("Wow",13);
+?> 
+```
+
+Return: WowWowWowWowWowWowWowWowWowWowWowWowWow
+
+</p>
+</details>
+
+9. Hàm `str_replace()` : Thay thế một số ký tự bằng một số ký tự khác trong một chuỗi gần giống hàm `str_ireplace()`.
+
+<details><summary><b>Demo</b></summary>
+   <p>
+
+```php 
+<?php
+echo str_replace("world","Peter","Hello world!");
+?> 
+```
+
+Return: Hello Peter!
+
+</p>
+</details>
+
+10. Hàm `str_shuffle()` : Trộn ngẫu nhiên tất cả các ký tự của một chuỗi.
+
+<details><summary><b>Demo</b></summary>
+   <p>
+
+```php 
+<?php
+echo str_shuffle("Hello World");
+?> 
+```
+
+Return: oldlre loWH
+
+</p>
+</details>
+
+11. Hàm `str_split()` : Chia một chuỗi thành một mảng.
+
+<details><summary><b>Demo</b></summary>
+   <p>
+
+```php 
+<?php
+print_r(str_split("Hello"));
+?> 
+```
+
+Return: Array ( [0] => H [1] => e [2] => l [3] => l [4] => o )
+
+</p>
+</details>
+
+12. Hàm `str_word_count()` : Đếm số từ trong một chuỗi.
+
+<details><summary><b>Demo</b></summary>
+   <p>
+
+```php 
+<?php
+echo str_word_count("Hello world!");
+?> 
+```
+
+Return: 2
+
+</p>
+</details>
+
+13. Hàm `stripos()` : Tìm vị trí xuất hiện đầu tiên của  một chuỗi bên trong chuỗi khác.
+
+<details><summary><b>Demo</b></summary>
+   <p>
+
+```php 
+<?php
+echo stripos("I love php, I love php too!","PHP");
+?> 
+```
+
+Return: 7
+
+</p>
+</details>
+
+14. Hàm `strlen()` : Tìm vị trí xuất hiện đầu tiên của  một chuỗi bên trong chuỗi khác.
+
+<details><summary><b>Demo</b></summary>
+   <p>
+
+```php 
+<?php
+echo strlen("Hello");
+?> 
+```
+
+Return: 5
+
+</p>
+</details>
+
+15. Hàm `substr()` : Trả về một phần của chuỗi.
+
+<details><summary><b>Demo</b></summary>
+   <p>
+
+```php 
+<?php
+echo substr("Hello world",6);
+?> 
+```
+
+Return: world
+
+</p>
+</details>
+
 ## Array Functions
 
 ## File handling
