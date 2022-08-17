@@ -469,7 +469,7 @@ Return: 2
 </p>
 </details>
 
-13. Hàm `stripos()` : Tìm vị trí xuất hiện đầu tiên của  một chuỗi bên trong chuỗi khác.
+13. Hàm `stripos()` : Tìm vị trí xuất hiện đầu tiên của một chuỗi bên trong chuỗi khác.
 
 <details><summary><b>Demo</b></summary>
    <p>
@@ -485,7 +485,7 @@ Return: 7
 </p>
 </details>
 
-14. Hàm `strlen()` : Tìm vị trí xuất hiện đầu tiên của  một chuỗi bên trong chuỗi khác.
+14. Hàm `strlen()` : Tìm vị trí xuất hiện đầu tiên của một chuỗi bên trong chuỗi khác.
 
 <details><summary><b>Demo</b></summary>
    <p>
@@ -518,5 +518,146 @@ Return: world
 </details>
 
 ## Array Functions
+
+- Các hàm mảng cho phép bạn truy cập và thao tác với mảng:
+
+1. Hàm `array()` : Hàm được sử dụng để tạo một mảng.
+
+<details><summary><b>Demo</b></summary>
+   <p>
+
+```php 
+<?php
+$cars=array("Volvo","BMW","Toyota"); 
+echo "I like " . $cars[0] . ", " . $cars[1] . " and " . $cars[2] . ".";
+?> 
+```
+
+Return: I like Volvo, BMW and Toyota.
+
+</p>
+</details>
+
+2. Hàm `array_pop()` : Xóa phần tử cuối của mảng.
+
+<details><summary><b>Demo</b></summary>
+   <p>
+
+```php 
+<?php
+$a=array("red","green","blue");
+array_pop($a);
+print_r($a);
+?> 
+```
+
+Return: Array ( [0] => red [1] => green )
+
+</p>
+</details>
+
+3. Hàm `array_push()` : Chèn một hoặc nhiều phần tử vào cuối mảng.
+
+<details><summary><b>Demo</b></summary>
+   <p>
+
+```php 
+<?php
+$a=array("red","green");
+array_push($a,"blue","yellow");
+print_r($a);
+?> 
+```
+
+Return: Array ( [0] => red [1] => green [2] => blue [3] => yellow )
+
+</p>
+</details>
+
+4. Hàm `array_replace()` : Hàm thay thế các giá trị của mảng đầu tiên bằng các giá trị từ các mảng sau.
+
+<details><summary><b>Demo</b></summary>
+   <p>
+
+```php 
+<?php
+$a1=array("red","green");
+$a2=array("blue","yellow");
+print_r(array_replace($a1,$a2));
+?> 
+```
+
+Return: Array ( [0] => blue [1] => yellow )
+
+</p>
+</details>
+
+5. Hàm `array_shift()` : Hàm loại bỏ phần tử đầu tiên khỏi một mảng và trả về giá trị của phần tử bị loại bỏ.
+
+<details><summary><b>Demo</b></summary>
+   <p>
+
+```php 
+<?php
+$a=array("a"=>"red","b"=>"green","c"=>"blue");
+echo array_shift($a);
+print_r ($a);
+?> 
+```
+
+Return: Array ( [b] => green [c] => blue )
+
+</p>
+</details>
+
+6. Hàm `array_slice()` : Hàm trả về các phần đã chọn của một mảng.
+
+<details><summary><b>Demo</b></summary>
+   <p>
+
+```php 
+<?php
+$a=array("red","green","blue","yellow","brown");
+print_r(array_slice($a,2));
+?> 
+```
+
+Return: Array ( [0] => blue [1] => yellow [2] => brown )
+</p>
+</details>
+
+7. Hàm `array_unshift()` : Hàm chèn các phần tử mới vào một mảng. Các giá trị mảng mới sẽ được chèn vào đầu mảng.
+
+<details><summary><b>Demo</b></summary>
+   <p>
+
+```php 
+<?php
+$a=array("a"=>"red","b"=>"green");
+array_unshift($a,"blue");
+print_r($a);
+?> 
+```
+
+Return: Array ( [0] => blue [a] => red [b] => green )
+</p>
+</details>
+
+
+8. Hàm `sort()` : Hàm chèn các phần tử mới vào một mảng. Các giá trị mảng mới sẽ được chèn vào đầu mảng.
+
+<details><summary><b>Demo</b></summary>
+   <p>
+
+```php 
+<?php
+$cars=array("Volvo","BMW","Toyota");
+sort($cars);
+?> 
+```
+
+Return: Array ( [0] => BMW [1] => Toyota [2] => Volvo )
+</p>
+</details>
 
 ## File handling
