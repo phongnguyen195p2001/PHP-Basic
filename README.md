@@ -201,13 +201,71 @@ if ($t < "10") {
 
 ### Loops
 
+- Thường thì khi bạn viết mã, bạn muốn cùng một khối mã chạy đi chạy lại một số lần nhất định. Vì vậy, thay vì thêm một
+  số dòng mã gần như bằng nhau trong một tập lệnh, chúng ta có thể sử dụng các vòng lặp.
+
+#### Trong PHP, chúng ta có các loại vòng lặp sau:
+
+- **while**
+- **do...while**
+- **for**
+- **foreach**
+
 ### while
+
+- Lặp qua một khối mã miễn là điều kiện được chỉ định là đúng.
+
+```php
+<?php
+$x = 1;
+
+while($x <= 5) {
+  echo "The number is: $x <br>";
+  $x++;
+}
+?>
+```
 
 ### do while
 
+- Lặp qua một khối mã một lần và sau đó lặp lại vòng lặp miễn là điều kiện chỉ định đúng.
+
+```php
+<?php
+$x = 1;
+
+do {
+  echo "The number is: $x <br>";
+  $x++;
+} while ($x <= 5);
+?>
+```
+
 ### for
 
+- Lặp qua một khối mã một số lần được chỉ định.
+
+```php
+<?php
+for ($x = 0; $x <= 10; $x++) {
+  echo "The number is: $x <br>";
+}
+?>
+```
+
 ### foreach
+
+- Lặp qua một khối mã cho mỗi phần tử trong một mảng.
+
+```php
+<?php
+$colors = array("red", "green", "blue", "yellow");
+
+foreach ($colors as $value) {
+  echo "$value <br>";
+}
+?>
+```
 
 ## String Functions
 
