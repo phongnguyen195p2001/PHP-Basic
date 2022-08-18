@@ -643,7 +643,6 @@ Return: Array ( [0] => blue [a] => red [b] => green )
 </p>
 </details>
 
-
 8. Hàm `sort()` : Hàm chèn các phần tử mới vào một mảng. Các giá trị mảng mới sẽ được chèn vào đầu mảng.
 
 <details><summary><b>Demo</b></summary>
@@ -661,3 +660,118 @@ Return: Array ( [0] => BMW [1] => Toyota [2] => Volvo )
 </details>
 
 ## File handling
+
+- Các chức năng của hệ thống tệp cho phép bạn truy cập và thao tác với hệ thống tệp.
+
+### Các hàm:
+
+1. Hàm `fopen();` : Dùng để mở một tết hoặc URL.
+
+<details><summary><b>Demo</b></summary>
+   <p>
+
+```php 
+<?php
+$file = fopen("test.txt","r");
+?> 
+```
+
+</p>
+</details>
+
+2. Hàm `fclose();` : Dùng để đóng tệp.
+
+<details><summary><b>Demo</b></summary>
+   <p>
+
+```php 
+<?php
+$file = fopen("test.txt", "r");
+fclose($file);
+?> 
+```
+
+</p>
+</details>
+
+3. Hàm `file();` : Đọc một tệp thành một mảng.
+
+<details><summary><b>Demo</b></summary>
+   <p>
+
+```php 
+<?php
+print_r(file("test.txt"));
+?> 
+```
+
+return : Array ( [0] => Hello, this is a test file. [1] => There are three lines here. [2] => This is the last line. )
+
+</p>
+</details>
+
+4. Hàm `fgets();` : Trả về một dòng từ một tệp đang mở.
+
+<details><summary><b>Demo</b></summary>
+   <p>
+
+```php 
+<?php
+$file = fopen("test.txt","r");
+echo fgets($file);
+fclose($file);
+?> 
+```
+
+return : Hello, this is a test file.
+
+</p>
+</details>
+
+5. Hàm `copy();` : Hàm sao chép một tệp.
+
+<details><summary><b>Demo</b></summary>
+   <p>
+
+```php 
+<?php
+echo copy("source.txt","target.txt");
+?> 
+```
+
+</p>
+</details>
+
+### Các chế độ mở tệp:
+
+- “r” - Tệp tìm kiếm. Nếu tệp được mở thành công, fopen () sẽ tải tệp đó vào bộ nhớ và thiết lập một con trỏ trỏ đến ký
+  tự đầu tiên trong đó. Nếu không mở được tệp, fopen () trả về giá trị NULL.
+  <br><br>
+- “rb” - Mở để đọc ở chế độ nhị phân. Nếu tệp không tồn tại, fopen () trả về NULL.
+  <br><br>
+- “w” - Tệp tìm kiếm. Nếu tệp tồn tại, nội dung của nó sẽ bị ghi đè. Nếu tệp không tồn tại, một tệp mới sẽ được tạo. Trả
+  về NULL, nếu không thể mở tệp.
+  <br><br>
+- “wb” - Mở để viết ở chế độ nhị phân. Nếu tệp tồn tại, nội dung của nó sẽ bị ghi đè. Nếu tệp không tồn tại, nó sẽ được
+  tạo.
+  <br><br>
+- “a” - Tệp tìm kiếm. Nếu tệp được mở thành công, fopen () sẽ tải tệp đó vào bộ nhớ và thiết lập một con trỏ trỏ đến ký
+  tự cuối cùng trong đó. Nếu tệp không tồn tại, một tệp mới sẽ được tạo. Trả về NULL, nếu không thể mở tệp.
+  <br><br>
+- “ab” - Mở để nối thêm ở chế độ nhị phân. Dữ liệu được thêm vào cuối tệp. Nếu tệp không tồn tại, nó sẽ được tạo.
+  <br><br>
+- “r+” - Tệp tìm kiếm. Nếu được mở thành công, fopen () sẽ tải nó vào bộ nhớ và thiết lập một con trỏ trỏ đến ký tự đầu
+  tiên trong đó. Trả về NULL, nếu không thể mở tệp.
+  <br><br>
+- “rb+” - Mở cho cả đọc và ghi ở chế độ nhị phân. Nếu tệp không tồn tại, fopen () trả về NULL.
+  <br><br>
+- “w+” - Tệp tìm kiếm. Nếu tệp tồn tại, nội dung của nó sẽ bị ghi đè. Nếu tệp không tồn tại, một tệp mới sẽ được tạo.
+  Trả về NULL, nếu không thể mở tệp.
+  <br><br>
+- “wb+” - Mở cho cả đọc và ghi ở chế độ nhị phân. Nếu tệp tồn tại, nội dung của nó sẽ bị ghi đè. Nếu tệp không tồn tại,
+  nó sẽ được tạo.
+  <br><br>
+- “a+” - Tệp tìm kiếm. Nếu tệp được mở thành công, fopen () sẽ tải tệp vào bộ nhớ và thiết lập một con trỏ trỏ đến ký tự
+  cuối cùng trong đó. Nếu tệp không tồn tại, một tệp mới sẽ được tạo. Trả về NULL, nếu không thể mở tệp.
+  <br><br>
+- “ab+” - Mở cho cả đọc và thêm ở chế độ nhị phân. Nếu tệp không tồn tại, nó sẽ được tạo.
