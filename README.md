@@ -2,24 +2,29 @@
 
 ## Introduction to web Technology(Giới thiệu về công nghệ web):
 
-- Công nghệ Web đề cập đến các công cụ và kỹ thuật khác nhau được sử dụng trong quá trình giao tiếp giữa các loại thiết
-  bị khác nhau qua internet. Trình duyệt web được sử dụng để truy cập các trang web. Trình duyệt web có thể được định
-  nghĩa là các chương trình hiển thị văn bản, dữ liệu, hình ảnh, hoạt ảnh và video trên Internet. Các tài nguyên siêu
-  liên kết trên World Wide Web có thể được truy cập bằng giao diện phần mềm do trình duyệt Web cung cấp.
+- Công nghệ web là một thuật ngữ chung đề cập đến nhiều ngôn ngữ và gói đa phương tiện được sử dụng kết hợp với nhau, để tạo ra các trang web. Mỗi công nghệ có chức năng riêng biệt và cần yêu cầu sử dụng kép ít nhất thêm một công nghệ khác.
+
+### kkkk
+
+-  
 
 ### Công nghệ Web có thể được phân loại thành các phần sau:
 
-- **World Wide Web (WWW):** World Wide Web dựa trên một số công nghệ khác nhau: Trình duyệt web, Ngôn ngữ đánh dấu siêu
-  văn bản (HTML) và Giao thức truyền siêu văn bản (HTTP).
-- **Web Browser(Trình duyệt web):** Trình duyệt web là một phần mềm ứng dụng để khám phá www (World Wide Web). Nó cung
-  cấp giao diện giữa máy chủ và máy khách và yêu cầu máy chủ cung cấp các tài liệu và dịch vụ web.
-- **Web Server(Máy chủ Web):** Máy chủ web là một chương trình xử lý các yêu cầu mạng của người dùng và phục vụ họ với
-  các tệp tạo trang web. Việc trao đổi này diễn ra bằng cách sử dụng Giao thức truyền siêu văn bản (HTTP).
-- **Web Pages(Trang Web):** Trang web là một tài liệu kỹ thuật số được liên kết với World Wide Web và bất kỳ ai được kết
-  nối với internet có trình duyệt web đều có thể xem được.
-- **Web Development(Phát triển Web):** Phát triển web đề cập đến việc xây dựng, tạo và duy trì các trang web. Nó bao gồm
-  các khía cạnh như thiết kế web, xuất bản web, lập trình web và quản lý cơ sở dữ liệu. Đó là việc tạo ra một ứng dụng
-  hoạt động trên internet, tức là các trang web.
+#### Front End:
+  
+- Front-end được tạo ra bởi 3 loại ngôn ngữ cơ bản là HTML, CSS và JavaScript. Các lập trình viên Front-end sẽ cần đảm bảo nội dung hiển thị tốt trên mọi nền tảng khác nhau.
+
+##### Các công nghệ Front End frameworks:
+
+![alt text](https://lh5.googleusercontent.com/Hfnut8UXHDCnft_l065ubj0XCOolACcvSLWGg2eiJWQHnO8o-L5KCOT4w_ZAP4FoNbk4YSCKPOfREwIpbu0lTZIk8QFCRT30NKtgTDCCAxHcA3QAAMTYbSrgk2tsSvUMzP-eKvCG)
+
+#### Back End:
+
+- BackEnd là những phần bên trong bao gồm: máy chủ, ứng dụng và cơ sở dữ liệu.
+
+##### Các công nghệ Back End frameworks:
+
+![alt text](https://d3hi6wehcrq5by.cloudfront.net/itnavi-blog/2020/04/Backend-l%C3%A0-g%C3%AC-3.jpg)
 
 ## Introduction to HTML5 and CSS(Giới thiệu về HTML5 và CSS):
 
@@ -31,10 +36,69 @@
   thứ năm và hiện tại của HTML. Nó đã cải thiện đánh dấu có sẵn cho các tài liệu và đã giới thiệu các giao diện lập
   trình ứng dụng:application programming interfaces(API) và Mô hình Đối tượng Tài liệu:Document Object Model(DOM).
 
+```html
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1>Hello!</h1>
+</body>
+</html>
+```
+
 ### CSS
 
 - **C**ascading **S**tyle **S**heets, hay còn được gọi là **CSS**, CSS cho phép áp dụng cả kiểu(Style) cho các trang web
   ,bạn có thể làm cho trang web theo cách mình muốn như thay đổi màu phông chữ , khoảng cách và nhiều thứ khác.
+
+#### Các cách viết css
+
+- Độ ưu tiên theo số thứ thự 1,2,3:
+
+1. Viết trong thẻ của html (attribute):
+
+```html
+<p style="color: black;font-style: normal"></p>
+```
+
+2. Viết css trong file html:
+
+```html
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  <style>
+    h1{
+      color: black;
+      font-style: normal;
+    }
+  </style>
+</head>
+<body>
+<h1>Hello!</h1>
+</body>
+</html>
+```
+
+3. viết trong file css:
+
+```css
+h1 {
+    color: black;
+    font-size: 20px;
+}
+```
 
 ## PHP Introduction
 
