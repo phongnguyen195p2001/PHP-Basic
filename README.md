@@ -4,10 +4,6 @@
 
 - Công nghệ web là một thuật ngữ chung đề cập đến nhiều ngôn ngữ và gói đa phương tiện được sử dụng kết hợp với nhau, để tạo ra các trang web. Mỗi công nghệ có chức năng riêng biệt và cần yêu cầu sử dụng kép ít nhất thêm một công nghệ khác.
 
-### kkkk
-
--  
-
 ### Công nghệ Web có thể được phân loại thành các phần sau:
 
 #### Front End:
