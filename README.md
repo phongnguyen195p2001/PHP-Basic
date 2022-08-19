@@ -10,20 +10,15 @@
 
 #### Server Side Rendering (SSR):
 
-- Server side rendering hay SSR là cách thông thường cho việc render trang web ở trình duyệt. Như các bước mô tả bên
-  dưới cách truyền thống để rendering nội dung web như các bước dưới đây :
+- Gọi nó là server-side rendering là vì phần lớn logic sẽ được xử lý ở server:
 
-    - Người dùng gửi một yêu cầu tới website( Thông thường thông qua trình duyeejt)
-    - Phía server kiểm tra và chuẩn bị nội dung HTML sau khi đã đi qua một lượt các script có trong trang web
-    - Các đoạn HTML đã được biên dịch được gửi tới trình duyệt của người dùng cho việc render.
-    - Trình duyệt tải về HTML và làm các trang có thể nhìn thấy với người dùng
-    - Trình duyệt sau đó tải về Javasciprt(JS) và tiến hành thực thi JS, nó làm cho trang web có thể tương tác.
-
-![alt-text](https://images.viblo.asia/5627c9c6-680f-444e-b95f-cb003003c4f9.png)
+  - Khi người dùng vào một trang web, trình duyệt sẽ gửi GET request tới web server.
+  - Web server sẽ nhận request, đọc dữ liệu từ database.
+  - Web server sẽ render HTML, trả về cho browser để hiển thị cho người dùng
 
 #### Client Side Rendering (CSR):
 
-- Client side rendering là một cách tiếp cận khác về việc làm thế nào một trang web được xử lí để hiển thị trên trình duyệt. Ở CSR, gánh nặng về việc biên dịch nội dung, sinh ra HTML được chuyển tới phía trình duyệt người dùng.
+- Client Side Rendering tức là việc render HTML, CSS sẽ được thực hiện ở client (Tức JavaScript ở trình duyệt)
 
 - Cách tiếp cận này được tiếp sức mạnh từ các framework Javascript và các thư viện. Luồng chính của một trang web render trong trường hợp Client-side rendering như sau:
 
@@ -32,23 +27,21 @@
   - Trình duyệt tải HTML và JS trong khi nhìn thấy một biểu tượng loading
   - Sau khi trình duyệt lấy JS về, nó sẽ tạo các yêu cầu API thông qua Ajax và lấy về các nội dung động và xử lí chúng để render ra nội dung cuối cùng.
   - Sau khi server phản hồi, nội dung cuối cùng sẽ được render sử dụng quá trình xử lí DOM trên trình duyệt người dùng.
-
-![alt-text](https://images.viblo.asia/8bb0712f-0108-4fc5-8960-a9d6b6d5b701.png)
-
-#### Front End:
+  
+##### Front End:
 
 - Front-end được tạo ra bởi 3 loại ngôn ngữ cơ bản là HTML, CSS và JavaScript. Các lập trình viên Front-end sẽ cần đảm
   bảo nội dung hiển thị tốt trên mọi nền tảng khác nhau.
 
-##### Các công nghệ Front End frameworks:
+###### Các công nghệ Front End frameworks:
 
 ![alt text](https://lh5.googleusercontent.com/Hfnut8UXHDCnft_l065ubj0XCOolACcvSLWGg2eiJWQHnO8o-L5KCOT4w_ZAP4FoNbk4YSCKPOfREwIpbu0lTZIk8QFCRT30NKtgTDCCAxHcA3QAAMTYbSrgk2tsSvUMzP-eKvCG)
 
-#### Back End:
+##### Back End:
 
 - BackEnd là những phần bên trong bao gồm: máy chủ, ứng dụng và cơ sở dữ liệu.
 
-##### Các công nghệ Back End frameworks:
+###### Các công nghệ Back End frameworks:
 
 ![alt text](https://d3hi6wehcrq5by.cloudfront.net/itnavi-blog/2020/04/Backend-l%C3%A0-g%C3%AC-3.jpg)
 
