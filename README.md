@@ -142,7 +142,7 @@ h1 {
 ```
 
 ## PHP Introduction
-
+/var/www/prj1
 - Thuật ngữ PHP được viết tắt từ _Hypertext Preprocessor_ .PHP là một ngôn ngữ kịch bản(scripting languege) phía máy chủ
   đc thiết kế đặc biệt để phát triển web. PHP là một mã nguồn mở, được tải xuống và sử dingj miễn phí.
 
@@ -243,7 +243,7 @@ nhau:**
 | %        | Mô đun              | $x % $y  | Phần còn lại của $x chia cho $y    |
 | ">"      | Lớn hơn             | $x > $y  | $x phải lớn hơn $y                 |
 | <        | Nhỏ hơn             | $x < $y  | $x phải lớn hơn $y                 |
-| =        | Bằng                | $x = $y  | $x bằng $y                         |
+| ==       | Bằng                | $x == $y | $x bằng $y                         |
 | <=       | Nhỏ hơn hoặc bằng   | $x <= $y | $x nhỏ hơn hoặc bằng $y            |
 | `>=      | Lớn hơn hoặc bằng   | $x >= $y | $x lớn hơn hoặc bằng               |
 
