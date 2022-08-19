@@ -6,6 +6,26 @@
 
 ### Công nghệ Web có thể được phân loại thành các phần sau:
 
+#### Server Side Rendering (SSR):
+
+- Server side rendering hay SSR là cách thông thường cho việc render trang web ở trình duyệt. Như các bước mô tả bên dưới cách truyền thống để rendering nội dung web như các bước dưới đây :
+
+   - Người dùng gửi một yêu cầu tới website( Thông thường thông qua trình duyeejt)
+   - Phía server kiểm tra và chuẩn bị nội dung HTML sau khi đã đi qua một lượt các script có trong trang web
+   - Các đoạn HTML đã được biên dịch được gửi tới trình duyệt của người dùng cho việc render.
+   - Trình duyệt tải về HTML và làm các trang có thể nhìn thấy với người dùng
+   - Trình duyệt sau đó tải về Javasciprt(JS) và tiến hành thực thi JS, nó làm cho trang web có thể tương tác
+
+#### Client Side Rendering (CSR):
+
+- Server side rendering hay SSR là cách thông thường cho việc render trang web ở trình duyệt. Như các bước mô tả bên dưới cách truyền thống để rendering nội dung web như các bước dưới đây :
+
+   - Người dùng gửi một yêu cầu tới website( Thông thường thông qua trình duyeejt)
+   - Phía server kiểm tra và chuẩn bị nội dung HTML sau khi đã đi qua một lượt các script có trong trang web
+   - Các đoạn HTML đã được biên dịch được gửi tới trình duyệt của người dùng cho việc render.
+   - Trình duyệt tải về HTML và làm các trang có thể nhìn thấy với người dùng
+   - Trình duyệt sau đó tải về Javasciprt(JS) và tiến hành thực thi JS, nó làm cho trang web có thể tương tác
+
 #### Front End:
   
 - Front-end được tạo ra bởi 3 loại ngôn ngữ cơ bản là HTML, CSS và JavaScript. Các lập trình viên Front-end sẽ cần đảm bảo nội dung hiển thị tốt trên mọi nền tảng khác nhau.
