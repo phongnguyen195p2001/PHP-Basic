@@ -156,15 +156,15 @@ h1 {
 **Các biến có thể lưu trữ dữ liệu thuộc các kiểu khác nhau và các kiểu dữ liệu khác nhau có thể làm những việc khác
 nhau:**
 
-- **String** : Trả về chuỗi.
+- **String** : Kiểu chuỗi.
   `
   $a = "chuỗi";
   `
-- **Integer(int)** : Trả về số nguyên.
+- **Integer(int)** : Kiểu số nguyên.
   `
   $a = 1;
   `
-- **Float** : Trả về dạng số thập phân.
+- **Float** : Kiểu số thập phân.
   `
   $a = 2.5;
   `
@@ -173,7 +173,7 @@ nhau:**
   $x = true;
   $y = false;
   `
-- **Array** : Trả về mảng.
+- **Array** : Kiểu mảng.
   `
   $cars = array("Volvo","BMW","Toyota");
   `
@@ -233,14 +233,19 @@ nhau:**
 
 ### Kí hiệu
 
-| Operator | Name        | Syntax      | Operation                           |
-|:---------|:------------|:------------|:------------------------------------|
-| +        | Cộng        | $x + $y     | Tính tổng phép tính                 |
-| -        | Trừ         | $x - $y     | Trừ phép tính                       |
-| *        | Nhân        | $x * $y     | Nhân phép tính                      |
-| /        | Chia        | $x / $y     | Chia phép tính                      |
-|**        | Lũy thừa    | $x ** $y    | $x được nâng lên thành lũy thừa $y  |
-|**        | Mô đun      | $x % $y     | Phần còn lại của $x chia cho $y     |
+| Operator | Name                | Syntax   | Operation                          |
+|:---------|:--------------------|:---------|:-----------------------------------|
+| +        | Cộng                | $x + $y  | Tính tổng phép tính                |
+| -        | Trừ                 | $x - $y  | Trừ phép tính                      |
+| *        | Nhân                | $x * $y  | Nhân phép tính                     |
+| /        | Chia                | $x / $y  | Chia phép tính                     |
+| **       | Lũy thừa            | $x ** $y | $x được nâng lên thành lũy thừa $y |
+| %        | Mô đun              | $x % $y  | Phần còn lại của $x chia cho $y    |
+| ">"      | Lớn hơn             | $x > $y  | $x phải lớn hơn $y                 |
+| <        | Nhỏ hơn             | $x < $y  | $x phải lớn hơn $y                 |
+| =        | Bằng                | $x = $y  | $x bằng $y                         |
+| <=       | Nhỏ hơn hoặc bằng   | $x <= $y | $x nhỏ hơn hoặc bằng $y            |
+| `>=      | Lớn hơn hoặc bằng   | $x >= $y | $x lớn hơn hoặc bằng               |
 
 ## Control Structures
 
@@ -381,7 +386,7 @@ foreach ($colors as $value) {
 <details><summary><b>Demo</b></summary>
 <p>
 
-```php 
+```php
 <?php
   $str = "Hello world!";
   echo chunk_split($str,1,".");
@@ -398,7 +403,7 @@ Return : H.e.l.l.o. .w.o.r.l.d.!.
 <details><summary><b>Demo</b></summary>
    <p>
 
-```php 
+```php
 <?php
 $arr = array('Hello','World!','Beautiful','Day!');
 echo implode(" ",$arr);
@@ -415,7 +420,7 @@ Return: Hello World! Beautiful Day!
 <details><summary><b>Demo</b></summary>
    <p>
 
-```php 
+```php
 <?php
 $str = "Hello world. It's a beautiful day.";
 print_r (explode(" ",$str));
@@ -432,9 +437,9 @@ Return: Array ( [0] => Hello [1] => world. [2] => It's [3] => a [4] => beautiful
 <details><summary><b>Demo</b></summary>
    <p>
 
-```php 
+```php
 <?php
-echo "Hello!"
+  echo "Hello!"
 ?> 
 ```
 
@@ -448,7 +453,7 @@ Return: Hello!
 <details><summary><b>Demo</b></summary>
    <p>
 
-```php 
+```php
 <?php
 $arr = array('Hello','World!','Beautiful','Day!');
 echo join(" ",$arr);
@@ -465,7 +470,7 @@ Return: Hello World! Beautiful Day!
 <details><summary><b>Demo</b></summary>
    <p>
 
-```php 
+```php
 <?php
 $str = "Hello";
 echo md5($str);
@@ -482,7 +487,7 @@ Return: 8b1a9953c4611296a827abf8c47804d7
 <details><summary><b>Demo</b></summary>
    <p>
 
-```php 
+```php
 <?php
 echo str_ireplace("WORLD","Peter","Hello good world!");
 
@@ -499,7 +504,7 @@ Return: Hello good Peter!
 <details><summary><b>Demo</b></summary>
    <p>
 
-```php 
+```php
 <?php
 echo str_repeat("Wow",13);
 ?> 
@@ -515,7 +520,7 @@ Return: WowWowWowWowWowWowWowWowWowWowWowWowWow
 <details><summary><b>Demo</b></summary>
    <p>
 
-```php 
+```php
 <?php
 echo str_replace("world","Peter","Hello world!");
 ?> 
@@ -531,7 +536,7 @@ Return: Hello Peter!
 <details><summary><b>Demo</b></summary>
    <p>
 
-```php 
+```php
 <?php
 echo str_shuffle("Hello World");
 ?> 
@@ -547,7 +552,7 @@ Return: oldlre loWH
 <details><summary><b>Demo</b></summary>
    <p>
 
-```php 
+```php
 <?php
 print_r(str_split("Hello"));
 ?> 
@@ -563,7 +568,7 @@ Return: Array ( [0] => H [1] => e [2] => l [3] => l [4] => o )
 <details><summary><b>Demo</b></summary>
    <p>
 
-```php 
+```php
 <?php
 echo str_word_count("Hello world!");
 ?> 
@@ -579,7 +584,7 @@ Return: 2
 <details><summary><b>Demo</b></summary>
    <p>
 
-```php 
+```php
 <?php
 echo stripos("I love php, I love php too!","PHP");
 ?> 
@@ -595,7 +600,7 @@ Return: 7
 <details><summary><b>Demo</b></summary>
    <p>
 
-```php 
+```php
 <?php
 echo strlen("Hello");
 ?> 
@@ -611,7 +616,7 @@ Return: 5
 <details><summary><b>Demo</b></summary>
    <p>
 
-```php 
+```php
 <?php
 echo substr("Hello world",6);
 ?> 
@@ -631,7 +636,7 @@ Return: world
 <details><summary><b>Demo</b></summary>
    <p>
 
-```php 
+```php
 <?php
 $cars=array("Volvo","BMW","Toyota"); 
 echo "I like " . $cars[0] . ", " . $cars[1] . " and " . $cars[2] . ".";
@@ -648,7 +653,7 @@ Return: I like Volvo, BMW and Toyota.
 <details><summary><b>Demo</b></summary>
    <p>
 
-```php 
+```php
 <?php
 $a=array("red","green","blue");
 array_pop($a);
@@ -666,7 +671,7 @@ Return: Array ( [0] => red [1] => green )
 <details><summary><b>Demo</b></summary>
    <p>
 
-```php 
+```php
 <?php
 $a=array("red","green");
 array_push($a,"blue","yellow");
@@ -684,7 +689,7 @@ Return: Array ( [0] => red [1] => green [2] => blue [3] => yellow )
 <details><summary><b>Demo</b></summary>
    <p>
 
-```php 
+```php
 <?php
 $a1=array("red","green");
 $a2=array("blue","yellow");
@@ -702,7 +707,7 @@ Return: Array ( [0] => blue [1] => yellow )
 <details><summary><b>Demo</b></summary>
    <p>
 
-```php 
+```php
 <?php
 $a=array("a"=>"red","b"=>"green","c"=>"blue");
 echo array_shift($a);
@@ -720,7 +725,7 @@ Return: Array ( [b] => green [c] => blue )
 <details><summary><b>Demo</b></summary>
    <p>
 
-```php 
+```php
 <?php
 $a=array("red","green","blue","yellow","brown");
 print_r(array_slice($a,2));
@@ -736,7 +741,7 @@ Return: Array ( [0] => blue [1] => yellow [2] => brown )
 <details><summary><b>Demo</b></summary>
    <p>
 
-```php 
+```php
 <?php
 $a=array("a"=>"red","b"=>"green");
 array_unshift($a,"blue");
@@ -753,7 +758,7 @@ Return: Array ( [0] => blue [a] => red [b] => green )
 <details><summary><b>Demo</b></summary>
    <p>
 
-```php 
+```php
 <?php
 $cars=array("Volvo","BMW","Toyota");
 sort($cars);
@@ -775,7 +780,7 @@ Return: Array ( [0] => BMW [1] => Toyota [2] => Volvo )
 <details><summary><b>Demo</b></summary>
    <p>
 
-```php 
+```php
 <?php
 $file = fopen("test.txt","r");
 ?> 
@@ -789,7 +794,7 @@ $file = fopen("test.txt","r");
 <details><summary><b>Demo</b></summary>
    <p>
 
-```php 
+```php
 <?php
 $file = fopen("test.txt", "r");
 fclose($file);
@@ -804,7 +809,7 @@ fclose($file);
 <details><summary><b>Demo</b></summary>
    <p>
 
-```php 
+```php
 <?php
 print_r(file("test.txt"));
 ?> 
@@ -820,7 +825,7 @@ return : Array ( [0] => Hello, this is a test file. [1] => There are three lines
 <details><summary><b>Demo</b></summary>
    <p>
 
-```php 
+```php
 <?php
 $file = fopen("test.txt","r");
 echo fgets($file);
@@ -838,7 +843,7 @@ return : Hello, this is a test file.
 <details><summary><b>Demo</b></summary>
    <p>
 
-```php 
+```php
 <?php
 echo copy("source.txt","target.txt");
 ?> 
