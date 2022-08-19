@@ -2,33 +2,42 @@
 
 ## Introduction to web Technology(Giới thiệu về công nghệ web):
 
-- Công nghệ web là một thuật ngữ chung đề cập đến nhiều ngôn ngữ và gói đa phương tiện được sử dụng kết hợp với nhau, để tạo ra các trang web. Mỗi công nghệ có chức năng riêng biệt và cần yêu cầu sử dụng kép ít nhất thêm một công nghệ khác.
+- Công nghệ web là một thuật ngữ chung đề cập đến nhiều ngôn ngữ và gói đa phương tiện được sử dụng kết hợp với nhau, để
+  tạo ra các trang web. Mỗi công nghệ có chức năng riêng biệt và cần yêu cầu sử dụng kép ít nhất thêm một công nghệ
+  khác.
 
 ### Công nghệ Web có thể được phân loại thành các phần sau:
 
 #### Server Side Rendering (SSR):
 
-- Server side rendering hay SSR là cách thông thường cho việc render trang web ở trình duyệt. Như các bước mô tả bên dưới cách truyền thống để rendering nội dung web như các bước dưới đây :
+- Server side rendering hay SSR là cách thông thường cho việc render trang web ở trình duyệt. Như các bước mô tả bên
+  dưới cách truyền thống để rendering nội dung web như các bước dưới đây :
 
-   - Người dùng gửi một yêu cầu tới website( Thông thường thông qua trình duyeejt)
-   - Phía server kiểm tra và chuẩn bị nội dung HTML sau khi đã đi qua một lượt các script có trong trang web
-   - Các đoạn HTML đã được biên dịch được gửi tới trình duyệt của người dùng cho việc render.
-   - Trình duyệt tải về HTML và làm các trang có thể nhìn thấy với người dùng
-   - Trình duyệt sau đó tải về Javasciprt(JS) và tiến hành thực thi JS, nó làm cho trang web có thể tương tác
+    - Người dùng gửi một yêu cầu tới website( Thông thường thông qua trình duyeejt)
+    - Phía server kiểm tra và chuẩn bị nội dung HTML sau khi đã đi qua một lượt các script có trong trang web
+    - Các đoạn HTML đã được biên dịch được gửi tới trình duyệt của người dùng cho việc render.
+    - Trình duyệt tải về HTML và làm các trang có thể nhìn thấy với người dùng
+    - Trình duyệt sau đó tải về Javasciprt(JS) và tiến hành thực thi JS, nó làm cho trang web có thể tương tác.
+
+![alt-text](https://images.viblo.asia/5627c9c6-680f-444e-b95f-cb003003c4f9.png)
 
 #### Client Side Rendering (CSR):
 
-- Server side rendering hay SSR là cách thông thường cho việc render trang web ở trình duyệt. Như các bước mô tả bên dưới cách truyền thống để rendering nội dung web như các bước dưới đây :
+- Server side rendering hay SSR là cách thông thường cho việc render trang web ở trình duyệt. Như các bước mô tả bên
+  dưới cách truyền thống để rendering nội dung web như các bước dưới đây :
 
-   - Người dùng gửi một yêu cầu tới website( Thông thường thông qua trình duyeejt)
-   - Phía server kiểm tra và chuẩn bị nội dung HTML sau khi đã đi qua một lượt các script có trong trang web
-   - Các đoạn HTML đã được biên dịch được gửi tới trình duyệt của người dùng cho việc render.
-   - Trình duyệt tải về HTML và làm các trang có thể nhìn thấy với người dùng
-   - Trình duyệt sau đó tải về Javasciprt(JS) và tiến hành thực thi JS, nó làm cho trang web có thể tương tác
+    - Người dùng gửi một yêu cầu tới website( Thông thường thông qua trình duyeejt)
+    - Phía server kiểm tra và chuẩn bị nội dung HTML sau khi đã đi qua một lượt các script có trong trang web
+    - Các đoạn HTML đã được biên dịch được gửi tới trình duyệt của người dùng cho việc render.
+    - Trình duyệt tải về HTML và làm các trang có thể nhìn thấy với người dùng
+    - Trình duyệt sau đó tải về Javasciprt(JS) và tiến hành thực thi JS, nó làm cho trang web có thể tương tác
+
+![alt-text](https://images.viblo.asia/8bb0712f-0108-4fc5-8960-a9d6b6d5b701.png)
 
 #### Front End:
-  
-- Front-end được tạo ra bởi 3 loại ngôn ngữ cơ bản là HTML, CSS và JavaScript. Các lập trình viên Front-end sẽ cần đảm bảo nội dung hiển thị tốt trên mọi nền tảng khác nhau.
+
+- Front-end được tạo ra bởi 3 loại ngôn ngữ cơ bản là HTML, CSS và JavaScript. Các lập trình viên Front-end sẽ cần đảm
+  bảo nội dung hiển thị tốt trên mọi nền tảng khác nhau.
 
 ##### Các công nghệ Front End frameworks:
 
@@ -94,12 +103,12 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-  <style>
-    h1{
-      color: black;
-      font-style: normal;
-    }
-  </style>
+    <style>
+        h1 {
+            color: black;
+            font-style: normal;
+        }
+    </style>
 </head>
 <body>
 <h1>Hello!</h1>
