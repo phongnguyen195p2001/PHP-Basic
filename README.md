@@ -12,22 +12,25 @@
 
 - Gọi nó là server-side rendering là vì phần lớn logic sẽ được xử lý ở server:
 
-  - Khi người dùng vào một trang web, trình duyệt sẽ gửi GET request tới web server.
-  - Web server sẽ nhận request, đọc dữ liệu từ database.
-  - Web server sẽ render HTML, trả về cho browser để hiển thị cho người dùng
+    - Khi người dùng vào một trang web, trình duyệt sẽ gửi GET request tới web server.
+    - Web server sẽ nhận request, đọc dữ liệu từ database.
+    - Web server sẽ render HTML, trả về cho browser để hiển thị cho người dùng
 
 #### Client Side Rendering (CSR):
 
 - Client Side Rendering tức là việc render HTML, CSS sẽ được thực hiện ở client (Tức JavaScript ở trình duyệt)
 
-- Cách tiếp cận này được tiếp sức mạnh từ các framework Javascript và các thư viện. Luồng chính của một trang web render trong trường hợp Client-side rendering như sau:
+- Cách tiếp cận này được tiếp sức mạnh từ các framework Javascript và các thư viện. Luồng chính của một trang web render
+  trong trường hợp Client-side rendering như sau:
 
-  - Người dùng gửi request tới webiste
-  - Thay vì một server, một con CDN có thể được sử dụng để gửi HTML, CSS và các file hỗ trợ cho người dùng.
-  - Trình duyệt tải HTML và JS trong khi nhìn thấy một biểu tượng loading
-  - Sau khi trình duyệt lấy JS về, nó sẽ tạo các yêu cầu API thông qua Ajax và lấy về các nội dung động và xử lí chúng để render ra nội dung cuối cùng.
-  - Sau khi server phản hồi, nội dung cuối cùng sẽ được render sử dụng quá trình xử lí DOM trên trình duyệt người dùng.
-  
+    - Người dùng gửi request tới webiste
+    - Thay vì một server, một con CDN có thể được sử dụng để gửi HTML, CSS và các file hỗ trợ cho người dùng.
+    - Trình duyệt tải HTML và JS trong khi nhìn thấy một biểu tượng loading
+    - Sau khi trình duyệt lấy JS về, nó sẽ tạo các yêu cầu API thông qua Ajax và lấy về các nội dung động và xử lí chúng
+      để render ra nội dung cuối cùng.
+    - Sau khi server phản hồi, nội dung cuối cùng sẽ được render sử dụng quá trình xử lí DOM trên trình duyệt người
+      dùng.
+
 ##### Front End:
 
 - Front-end được tạo ra bởi 3 loại ngôn ngữ cơ bản là HTML, CSS và JavaScript. Các lập trình viên Front-end sẽ cần đảm
@@ -45,15 +48,34 @@
 
 ![alt text](https://d3hi6wehcrq5by.cloudfront.net/itnavi-blog/2020/04/Backend-l%C3%A0-g%C3%AC-3.jpg)
 
+### Khác nhau giữa SSR và CSR:
+
+- **SSR**: Người dũng sẽ gửi request đến thẳng sever rồi phía sever reder ra html giả về phía người dùng.
+- **CSR**: Người dùng sẽ gửi request đến sever rồi phía sever giả về một cục JS và reder ra html giả về phía người dùng.
+
 ## Introduction to HTML5 and CSS(Giới thiệu về HTML5 và CSS):
 
 ### HTML5
 
-- **HTML** là viết tắt của Hyper Text Markup Language. Nó được sử dụng để thiết kế các trang web bằng ngôn ngữ đánh dấu.
-  HTML là viết tắt của ngôn ngữ Siêu văn bản và Đánh dấu. Siêu văn bản xác định liên kết giữa các trang web. Ngôn ngữ
-  đánh dấu được sử dụng để xác định tài liệu văn bản trong thẻ xác định cấu trúc của các trang web. HTML 5 là phiên bản
-  thứ năm và hiện tại của HTML. Nó đã cải thiện đánh dấu có sẵn cho các tài liệu và đã giới thiệu các giao diện lập
-  trình ứng dụng:application programming interfaces(API) và Mô hình Đối tượng Tài liệu:Document Object Model(DOM).
+- **HTML(Hypertext Markup Language)** là một nền tảng tương tự như Microsoft Word giúp người dùng thiết kế thành phần
+  trong website, cấu trúc các trang, chuyên mục hoặc các thiết kế các ứng dụng… Vậy, chức năng chủ yểu của nền tảng này
+  chính là tạo bố cục và định dạng website.
+
+- **HTML5** là một ngôn ngữ lập trình được phát triển trên nền tảng ngôn ngữ HTML và quan trọng nhất của World Wide
+  Web (WWW). Nó được sử dụng để thiết kế và cấu trúc các website, hỗ trợ cho đa phương tiện tối đa nhưng vẫn giúp cho
+  website thân thiện với mọi người dùng và mọi thiết bị, các chương trình máy tính, trình duyệt web.
+
+#### Sự khác biết giữa HTML và HTML5
+
+- **HTML5 hỗ trợ nhiều ứng dụng hơn**:Một số ứng dụng như SVG,canvas... được HTML5 hỗ chợ , nhưng dùng HTML thì phải
+  dùng các phương tiện bổ trợ.
+- _Lưu dữ liệu tạm_ **HTML5** sử dụng web **SQL databases, application cache** còn HTML chỉ dùng cache của trình duyệt.
+- _JavaScript chạy trong web browser_ .**HTML5** hỗ trợ hoàn toàn JavaScript chạy trên web browser còn Html ở phiên bản
+  cũ hơn thì không thực hiện được.
+- _Các element:_ **HTML5** tích hợp các element mới mẻ và quan trọng như summary, time, aside, audio, command, data,
+  datalist, details, embed, wbr, figcaption, figure, footer, header, article, hgroup, bdi, canvas, keygen, mark, meter,
+  nav, output, progress, rp, rt, ruby, section, source, track, video… Bên cạnh đó, nó cũng được loại bỏ các elements lỗi
+  thời trong HTML như isindex, noframes, acronym, applet, basefont, dir, font, frame, frameset, big, center, strike….
 
 ```html
 <!doctype html>
