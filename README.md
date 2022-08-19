@@ -23,14 +23,15 @@
 
 #### Client Side Rendering (CSR):
 
-- Server side rendering hay SSR là cách thông thường cho việc render trang web ở trình duyệt. Như các bước mô tả bên
-  dưới cách truyền thống để rendering nội dung web như các bước dưới đây :
+- Client side rendering là một cách tiếp cận khác về việc làm thế nào một trang web được xử lí để hiển thị trên trình duyệt. Ở CSR, gánh nặng về việc biên dịch nội dung, sinh ra HTML được chuyển tới phía trình duyệt người dùng.
 
-    - Người dùng gửi một yêu cầu tới website( Thông thường thông qua trình duyeejt)
-    - Phía server kiểm tra và chuẩn bị nội dung HTML sau khi đã đi qua một lượt các script có trong trang web
-    - Các đoạn HTML đã được biên dịch được gửi tới trình duyệt của người dùng cho việc render.
-    - Trình duyệt tải về HTML và làm các trang có thể nhìn thấy với người dùng
-    - Trình duyệt sau đó tải về Javasciprt(JS) và tiến hành thực thi JS, nó làm cho trang web có thể tương tác
+- Cách tiếp cận này được tiếp sức mạnh từ các framework Javascript và các thư viện. Luồng chính của một trang web render trong trường hợp Client-side rendering như sau:
+
+  - Người dùng gửi request tới webiste
+  - Thay vì một server, một con CDN có thể được sử dụng để gửi HTML, CSS và các file hỗ trợ cho người dùng.
+  - Trình duyệt tải HTML và JS trong khi nhìn thấy một biểu tượng loading
+  - Sau khi trình duyệt lấy JS về, nó sẽ tạo các yêu cầu API thông qua Ajax và lấy về các nội dung động và xử lí chúng để render ra nội dung cuối cùng.
+  - Sau khi server phản hồi, nội dung cuối cùng sẽ được render sử dụng quá trình xử lí DOM trên trình duyệt người dùng.
 
 ![alt-text](https://images.viblo.asia/8bb0712f-0108-4fc5-8960-a9d6b6d5b701.png)
 
