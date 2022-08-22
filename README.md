@@ -142,7 +142,7 @@ h1 {
 ```
 
 ## PHP Introduction
-/var/www/prj1
+
 - Thuật ngữ PHP được viết tắt từ _Hypertext Preprocessor_ .PHP là một ngôn ngữ kịch bản(scripting languege) phía máy chủ
   đc thiết kế đặc biệt để phát triển web. PHP là một mã nguồn mở, được tải xuống và sử dingj miễn phí.
 
