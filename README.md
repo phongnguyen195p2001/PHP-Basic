@@ -465,19 +465,20 @@ Return: Hello World! Beautiful Day!
 </p>
 </details>
 
-6. Hàm `md5()` : Hàm mã hóa MD5.
+6. Hàm `trim()` : Loại bỏ các ký tự từ cả hai bên của một chuỗi.
 
 <details><summary><b>Demo</b></summary>
    <p>
 
 ```php
 <?php
-$str = "Hello";
-echo md5($str);
-?> 
+$str = "Hello World!";
+echo $str . "<br>";
+echo trim($str,"Hed!");
+?>
 ```
 
-Return: 8b1a9953c4611296a827abf8c47804d7
+Return: llo Worl
 
 </p>
 </details>
